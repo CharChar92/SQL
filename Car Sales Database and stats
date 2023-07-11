@@ -1,0 +1,25 @@
+--Create a car sales database 
+
+CREATE TABLE vehicles(id INTEGER PRIMARY KEY, name TEXT, color TEXT, price INTEGER, year INTEGER);
+INSERT INTO vehicles VALUES (1, "BRONCO", "blue", 2500, 1998);
+INSERT INTO vehicles VALUES (2, "RANGER", "green", 6000, 2010);
+INSERT INTO vehicles VALUES (3, "corvette", "yellow", 8000, 2006); 
+INSERT INTO vehicles VALUES (4, "Raptor", "black", 20000, 2015);
+INSERT INTO vehicles VALUES (5, "F150", "grey", 4000, 2011);
+INSERT INTO vehicles VALUES (6, "Wrangler", "white", 21000, 2021);
+INSERT INTO vehicles VALUES (7, "cherokee", "brown", 9000, 2014);
+INSERT INTO vehicles VALUES (8, "Mustang", "red", 10000, 2017);
+INSERT INTO vehicles VALUES (9, "Beetle", "pink", 5000, 2006);
+INSERT INTO vehicles VALUES (10, "Benz", "silver", 30000,2020);
+INSERT INTO vehicles VALUES (11, "Altima", "black", 12000, 2014);
+INSERT INTO vehicles VALUES (12, "Accord", "peach", 6000, 2013);
+INSERT INTO vehicles VALUES (13, "Camero", "yellow", 4000, 2003);
+INSERT INTO vehicles VALUES (14, "Challenger", "green", 17000, 2023);
+INSERT INTO vehicles VALUES (15, "Charger", "blue", 15000, 2021);
+
+
+--Display the database ordered by price
+SELECT* from vehicles ORDER BY price asc;
+
+--What was the of all vehicles sold
+SELECT SUM(price) FROM vehicles;
